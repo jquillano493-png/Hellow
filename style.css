@@ -1,0 +1,247 @@
+body{
+    background-color: #E06B80;
+    border: 0px;
+    color: aliceblue;
+    font-family: "Pacifico", "Borel", cursive;
+    letter-spacing: 1px;
+    line-height: 1.1
+
+}
+
+/* HOME */
+
+#Greeting {
+    
+    margin: 50px auto;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+#box {
+    border: 5px solid #850E35; 
+    min-height: 600px; 
+    background: #FFC4C4;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px; 
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#ask {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: 20px 0; 
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    background-color: aliceblue;
+    color: #E06B80;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #850E35;
+    color: white;
+}
+
+
+/* GIFT */
+
+#announcement {
+    
+    margin: 50px auto;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-align: center;
+
+}
+
+
+
+
+#gift {
+    border: 5px solid #850E35; 
+    background: #FFC4C4;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px; 
+    border-radius: 20px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+}
+
+.gift-card {
+    transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: scale(1.1); 
+}
+
+.gift-img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; 
+    border: 3px solid #E06B80;
+    border-radius: 15px;
+    background: white;
+    padding: 10px;
+}
+
+/* PHOTO */
+
+#BORDS{
+    border: 5px solid #850E35; 
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.memory-card {
+    background: white;
+    padding: 15px;
+    padding-bottom: 40px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    transition: transform 0.3s ease, rotate 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+
+.memory-card:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+.memory-card:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.memory-card:hover {
+    transform: scale(1.05) rotate(0deg); 
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 3px;
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    #announcement {
+        font-size: 1.5rem;
+    }
+    .gallery-container {
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+    }
+}
+
+/* VID */
+
+
+/* FIXED VID SECTION */
+#vid {
+    border: 5px solid #850E35; 
+    background: #FFC4C4;
+    margin: 20px auto; /* Added some margin for breathing room */
+    width: 90%;
+    max-width: 800px; 
+    border-radius: 20px;
+    padding: 20px; /* Reduced padding slightly for better mobile fit */
+    display: flex;
+    flex-direction: column; /* Stacks video and text vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    max-width: 100%; /* Ensures video never exceeds the pink box width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.vid-caption {
+    margin-top: 15px;
+    color: #850E35; /* Darker color so it's readable on light pink */
+    font-size: 1.2rem;
+}
+
+/* Fix for the Back button positioning */
+.back-btn {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    display: inline-block;
+}
+
+#Letter {
+    
+    color: #850E35; 
+    font-family: "Pacifico", cursive; 
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+
+
+    border: 5px solid #850E35; 
+    background: #FFC4C4;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px; 
+    border-radius: 20px;
+    padding: 40px;
+    
+   
+    box-shadow: 10px 10px 0px rgba(133, 14, 53, 0.2);
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
